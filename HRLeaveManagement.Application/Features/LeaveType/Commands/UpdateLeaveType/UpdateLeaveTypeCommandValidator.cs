@@ -10,6 +10,10 @@ public class UpdateLeaveTypeCommandValidator : AbstractValidator<UpdateLeaveType
     {
         _repository = repository;
 
+        RuleFor(x => x.Id)
+            .NotNull()
+            .MustAsync(LeaveTypeMustExist);
+
         RuleFor(x => x.Name)
             .NotNull()
             .NotEmpty().WithMessage("{PropertyName} is required")
@@ -21,6 +25,12 @@ public class UpdateLeaveTypeCommandValidator : AbstractValidator<UpdateLeaveType
 
         RuleFor(x => x)
             .MustAsync(LeaveTypeNameUnique).WithMessage("Leave type already exists");
+    }
+
+    private async Task<bool> LeaveTypeMustExist(int id, CancellationToken arg2)
+    {
+        var leaveType = await _repository.GetByIdAsync(id);
+        return leaveType != null;
     }
 
     private Task<bool> LeaveTypeNameUnique(UpdateLeaveTypeCommand command, CancellationToken token)
