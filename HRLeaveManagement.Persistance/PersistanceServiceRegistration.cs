@@ -25,7 +25,7 @@ public static class PersistanceServiceRegistration
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped(typeof(ILeaveTypeRepository), typeof(LeaveTypeRepository));
         services.AddScoped(typeof(ILeaveRequestRepository), typeof(LeaveRequestRepository));
-        services.AddScoped(typeof(ILeaveAllocationRepository), typeof(LeaveTypeRepository));
+        services.AddScoped(typeof(ILeaveAllocationRepository), typeof(LeaveAllocationRepository));
 
         return services;
     }

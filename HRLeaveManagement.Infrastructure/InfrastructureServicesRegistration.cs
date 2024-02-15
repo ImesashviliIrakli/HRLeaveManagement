@@ -10,7 +10,7 @@ namespace HRLeaveManagement.Infrastructure;
 
 public static class InfrastructureServicesRegistration
 {
-    public static IServiceCollection ConfigureInfrastructureServices(
+    public static IServiceCollection AddInfrastructureServices(
         this IServiceCollection services,
         IConfiguration configuration)
     {
