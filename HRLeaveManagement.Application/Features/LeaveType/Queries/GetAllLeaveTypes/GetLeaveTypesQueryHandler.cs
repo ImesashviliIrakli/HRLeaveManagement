@@ -24,7 +24,7 @@ public class GetLeaveTypesQueryHandler : IRequestHandler<GetLeaveTypesQuery, Lis
 
         var data = _mapper.Map<List<LeaveTypeDto>>(leaveTypes);
 
-        _logger.LogInofrmation("Leave types were retrieved successfully");
+        _logger.LogInformation("Leave types were retrieved successfully");
 
         return data;
     }

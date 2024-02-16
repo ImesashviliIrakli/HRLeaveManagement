@@ -12,7 +12,7 @@ public class LoggerAdapter<T> : IAppLogger<T>
         _logger = loggerFactory.CreateLogger<T>();
     }
 
-    public void LogInofrmation(string message, params object[] args)
+    public void LogInformation(string message, params object[] args)
     {
         _logger.LogInformation(message, args);
     }
