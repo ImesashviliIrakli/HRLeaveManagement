@@ -3,7 +3,7 @@ using HRLeaveManagement.BlazorUI.Services.Base;
 
 namespace HRLeaveManagement.BlazorUI.Services;
 
-public class LeaveRequestService : BaseHttpService,, ILeaveRequestService
+public class LeaveRequestService : BaseHttpService, ILeaveRequestService
 {
     public LeaveRequestService(IClient client) : base(client)
     {

@@ -10,7 +10,7 @@ public class LeaveTypeService : BaseHttpService, ILeaveTypeService
 {
     private readonly IMapper _mapper;
 
-    public LeaveTypeService(IClient client, IMapper mapper, ILocalStorageService localStorageService) : base(client, localStorageService)
+    public LeaveTypeService(IClient client, IMapper mapper) : base(client)
     {
         this._mapper = mapper;
     }
