@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.Persistan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.BlazorUI", "HRLeaveManagement.BlazorUI\HRLeaveManagement.BlazorUI.csproj", "{65B1FC64-C12B-4C51-8B8D-CF98883B6AC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRLeaveManagement.Identity", "HRLeaveManagement.Identity\HRLeaveManagement.Identity.csproj", "{4D29CE7B-CF23-4532-A3A4-B30548CD2A08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.Identity", "HRLeaveManagement.Identity\HRLeaveManagement.Identity.csproj", "{4D29CE7B-CF23-4532-A3A4-B30548CD2A08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
